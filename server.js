@@ -34,29 +34,3 @@ server.listen(port, function () {
     console.log('Listening on port: ', port);
 });
 
-
-
-
-
-
-
-// request.post({url:url, oauth:oauth}, function (e, r, body) {
-//     // ready to make signed requests on behalf of the user
-//     var perm_data = qs.parse(body)
-//       , oauth =
-//         { consumer_key: CONSUMER_KEY
-//         , consumer_secret: CONSUMER_SECRET
-//         , token: perm_data.oauth_token
-//         , token_secret: perm_data.oauth_token_secret
-//         }
-//       , url = 'https://api.twitter.com/1.1/users/show.json'
-//       , qs =
-//         { screen_name: perm_data.screen_name
-//         , user_id: perm_data.user_id
-//         }
-//       ;
-//     request.get({url:url, oauth:oauth, qs:qs, json:true}, function (e, r, user) {
-//       console.log(user)
-//     })
-//   })
-
